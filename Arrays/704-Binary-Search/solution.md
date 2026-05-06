@@ -24,7 +24,7 @@ https://leetcode.com/problems/binary-search
 - If `nums[mid] == target` → return `mid`
 - If target is greater → search right half
 - Else → search left half
-- Repeat until `low > high`
+- Repeat until `low <= high`
 - Return `-1` if not found
 
 ---
@@ -54,7 +54,4 @@ https://leetcode.com/problems/binary-search
 - Runtime: 0 ms  
 - Memory: 48 MB  
 
----
-##  ad
-### ads
 ---
