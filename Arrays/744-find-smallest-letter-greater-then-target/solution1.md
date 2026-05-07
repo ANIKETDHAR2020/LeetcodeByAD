@@ -1,4 +1,5 @@
 # 744. Find Smallest Letter Greater Than Target
+https://leetcode.com/problems/find-smallest-letter-greater-than-target
 
 ## Overview
 A simple Java program that finds the **smallest character in a sorted array that is greater than a given target character**.
