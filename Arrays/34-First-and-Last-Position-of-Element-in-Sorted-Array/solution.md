@@ -83,8 +83,6 @@ Only constant extra space is used.
 - Target appears multiple times
 
 
-```
-
 ---
 
 ## Performance
