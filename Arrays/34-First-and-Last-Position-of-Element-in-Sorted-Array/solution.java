@@ -1,0 +1,43 @@
+import java.util.Arrays;
+
+public class Firstandlast {
+    public static void main(String[] args) {
+        int [] nums ={5,7,7,8,8,10};
+        int target=8;
+        int [] b= searchRange(nums,target);
+        System.out.println(Arrays.toString(b));
+    }
+    public static int[] searchRange(int[] nums, int target) {
+        int [] ans ={-1,-1};
+        int start =search(nums , target,true);
+        int end = search(nums, target,false);
+        ans[0]=start;
+        ans[1]=end;
+
+       return ans;
+    }
+    public static int search(int [] nums ,int target , boolean a){
+        int low = 0 , ans = -1;
+        int high = (nums.length)-1;
+        while(low <= high){
+
+        int mid = high+(low-high)/2;
+//check for first occurrence
+        if (target > nums[mid]) {
+            low = mid + 1;
+        }
+        else if(target < nums[mid]) {
+            high = mid - 1;
+        }
+        else {
+            ans = mid;
+            if (a) {
+                high = mid - 1;
+            } else {
+                low = mid + 1;
+            }
+        }
+        }return ans;
+    }
+    }
+
