@@ -94,9 +94,7 @@ Handles large mountain arrays efficiently because Binary Search avoids linear tr
 
 ## Performance
 
-- Faster than linear search for large arrays.
-- Efficient due to logarithmic time complexity.
-- Suitable for competitive programming and technical interviews.
-- Uses constant memory.
+Runtime 0 ms
+Memory 80.29 MB
 
 ---
